@@ -25,8 +25,26 @@ footer h3
 {
     width: 30%
 }
-@media (min-width: 768px) and (max-width: 1080) /*definition du responsive*/
-{
-    justify-content: space-evenly;
+a{
+    text-decoration: none;
 }
-
+nav{
+    width: 30%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around; 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.blue{
+    color: #0065FC;
+}
+a:hover{
+    background-color: #DEEBFF;
+}
+a:visited{
+    color: #000000;
+}
