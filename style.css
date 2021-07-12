@@ -1,42 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-body
-{
-    margin-left: 10%;
-    margin-right: 10%;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); /*import de la police raleway*/
+body{ /*selection police*/
     font-family: 'Raleway', sans-serif;
 }
-li
-{
-    list-style: none;
+header img{/* largeur du logo*/
+    width: 150px;
 }
-footer h3
-{
-    text-align: left;
-    margin: 40px;
-}
-.footer
-{
-    max-width: 100%;
-    margin: 0%;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: flex-start;
-}
-.propos, .hebergement, .assitance
-{
-    width: 30%
-}
-a{
-    text-decoration: none;
-    color: grey;
-}
-a:hover{
-    color: #0065FC;
-    border-bottom: 2px #0065FC solid;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around; 
+.header-top nav{ /*largeur de la <nav>*/
+    width: 30%;
 }
 header{
     display: flex;
@@ -45,14 +15,45 @@ header{
 .header-top{
     display: flex;
     justify-content: space-between;
+    margin-left: 40px;
+}
+.header-bottom{
+    margin-left: 40px;
+}
+li{
+    list-style: none;
+}
+.propos, .hebergement, .assitance{
+    width: 30%
+}
+nav a{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+nav a:hover{
+    color: #0065FC;
+    border-bottom: 2px #0065FC solid;
+}
+a:hover{
+    color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around; 
 }
 .blue{
     color: #0065FC;
 }
-header img{
-    padding: 0px;
-    width: 8%
+footer h3{
+    margin: 20px 20px 20px 40px;
 }
-.header-top nav{
-    width: 30%;
+.footer{
+    max-width: 100%;
+    margin: 0%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
 }
