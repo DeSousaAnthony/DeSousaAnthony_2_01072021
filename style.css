@@ -28,6 +28,7 @@ li{
 }
 nav a{
     font-weight: bold;
+    padding-top: 20px;
 }
 a{
     text-decoration: none;
@@ -35,17 +36,18 @@ a{
 }
 nav a:hover{
     color: #0065FC;
-    border-bottom: 2px #0065FC solid;
+    border-top: 2px #0065FC solid;
 }
 a:hover{
     color: black;
 }
 nav ul{
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 .blue{
     color: #0065FC;
+    padding-top: 20px;
 }
 footer h3{
     margin: 20px 20px 20px 40px;
