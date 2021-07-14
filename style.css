@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); /*import de la police raleway*/
 body{ /*selection police*/
     font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
 header img{/* largeur du logo*/
     width: 150px;
@@ -49,6 +50,95 @@ nav ul{
     color: #0065FC;
     padding-top: 20px;
 }
+
+/* Début css de la partie section*/
+
+.search{
+    font-size: bold;
+    display: flex;
+    width: 30%;
+    height: 50px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px;
+}
+
+.gps{
+    width: 20px;
+    height: 20px;
+}
+
+.position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f2f2f2;   
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+.searchtext{
+    border: 2px solid #f2f2f2;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+input{
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    
+    
+    
+}
+
+.research{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bold;
+}
+
+.filterboard{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 20px;
+}
+.flt-2{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50px;
+    height: 40px;
+
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    border: 3px solid #f2f2f2;
+    
+}
+.logo{
+    width: 35px;
+    height: 35px;
+}
+
+/*css du footer*/
+
 footer h3{
     margin: 20px 20px 20px 40px;
 }
