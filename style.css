@@ -36,7 +36,7 @@ a{
     color: grey;
 }
 nav a:hover{
-    color: #0065FC;
+    color: #0065fc;
     border-top: 2px #0065FC solid;
 }
 a:hover{
@@ -100,15 +100,21 @@ input{
     
 }
 
-.research{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+.btnsearch{
+    background: transparent;
+    width: 130px;
     height: 100%;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     background-color: #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    color: white;
     font-weight: bold;
+
+}
+
+.research{
+
 }
 
 .filterboard{
@@ -135,6 +141,7 @@ input{
 .logo{
     width: 35px;
     height: 35px;
+    color: #0065FC;
 }
 
 /*css du footer*/
