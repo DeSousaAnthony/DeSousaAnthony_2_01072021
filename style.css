@@ -3,49 +3,62 @@ body{ /*selection police*/
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
+
 header img{/* largeur du logo*/
     width: 150px;
 }
+
 .header-top nav{ /*largeur de la <nav>*/
     width: 30%;
 }
+
 header{
     display: flex;
     flex-direction: column;
 }
+
 .header-top{
     display: flex;
     justify-content: space-between;
     margin-left: 40px;
 }
+
 .header-bottom{
     margin-left: 40px;
 }
+
 li{
     list-style: none;
 }
+
 .propos, .hebergement, .assitance{
     width: 30%
 }
+
 nav a{
     font-weight: bold;
     padding-top: 20px;
 }
+
 a{
     text-decoration: none;
     color: grey;
 }
+
 nav a:hover{
     color: #0065fc;
     border-top: 2px #0065FC solid;
 }
+
 a:hover{
     color: black;
 }
+
 nav ul{
     display: flex;
     justify-content: space-around;
 }
+
 .blue{
     color: #0065FC;
     padding-top: 20px;
@@ -83,6 +96,7 @@ form{
     display: block;
     margin-top: 0em;
 }
+
 .searchtext{
     border: 2px solid #f2f2f2;
     padding-top: 12px;
@@ -95,26 +109,23 @@ input{
     cursor: pointer;
     font-weight: bold;
     font-size: 17px;
-    
-    
-    
 }
 
 .btnsearch{
     background: transparent;
     width: 130px;
     height: 100%;
-    border: none;
+    border-color: #0065FC;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
-
 }
-
-.research{
-
+.btnsearch:hover{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    cursor: pointer;
 }
 
 .filterboard{
@@ -127,6 +138,7 @@ input{
     font-weight: bold;
     font-size: 20px;
 }
+
 .flt-2{
     display: flex;
     flex-wrap: nowrap;
@@ -138,6 +150,7 @@ input{
     border: 3px solid #f2f2f2;
     
 }
+
 .logo{
     width: 35px;
     height: 35px;
@@ -149,6 +162,7 @@ input{
 footer h3{
     margin: 20px 20px 20px 40px;
 }
+
 .footer{
     max-width: 100%;
     margin: 0%;
