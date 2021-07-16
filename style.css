@@ -47,9 +47,7 @@ nav a:hover{
     border-top: 2px #0065FC solid;
 }
 
-a:hover{
-    color: black;
-}
+
 
 nav ul{
     display: flex;
@@ -153,7 +151,6 @@ input{
 }
 .flt-2:hover{
     background-color: #0065FC;
-    color: white
 }
 
 #logocercle{
@@ -178,7 +175,6 @@ input{
     display: flex;
 }
 
-
 .resultinfo{
     display: flex;
     align-items: center;
@@ -192,15 +188,77 @@ input{
     justify-content: center;
     margin-top: 10px;
 }
+
 .resultinfo p{
     color: black;
     margin-left: 50px;
 }
-
-.container{
+/* debut css <div> hebergement */
+.resultcontainer{
     display: flex;
-    margin-left: 40 px;
+}
+
+.containercard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    width: 60%;
+    height: 600px;
+    padding-left: 20px;
+    padding-top: 20px;
     background-color: #f2f2f2;
+    line-height: 5px;
+}
+
+h4{
+    color: black;
+    margin-left: 10px;
+}
+
+p{
+    color: black;
+    margin-left: 10px;
+}
+
+.hostelcard{
+    display: flex;
+    flex-direction: column;
+    border: white solid 2px;
+    border-radius: 15px 15px 15px 15px;
+    width: 200px; 
+    background-color: white;
+    box-shadow: grey 2px 2px 2px 2px;
+}
+
+.cardlink{
+    width: 200px;
+}
+
+.hostelcard:hover{
+    color: #0065FC;
+    border: none;
+}
+
+.imghotel{
+    width: 200px;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.star{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.popular{
+    display: flex;
+    margin-left: 80px;
+    width: 30%;
+    height: 600px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
