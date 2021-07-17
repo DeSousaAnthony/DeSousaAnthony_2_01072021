@@ -196,18 +196,30 @@ input{
 /* debut css <div> hebergement */
 .resultcontainer{
     display: flex;
+    margin-bottom: 20px;
+}
+
+h2, a ,h3{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.seemore{
+    color: black;
+}
+.seemore:hover{
+    color: #0065fc;
 }
 
 .containercard{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     border-radius: 15px 15px 15px 15px;
     width: 60%;
-    height: 600px;
+
     padding-left: 20px;
-    padding-top: 20px;
     background-color: #f2f2f2;
-    line-height: 5px;
 }
 
 h4{
@@ -228,10 +240,13 @@ p{
     width: 200px; 
     background-color: white;
     box-shadow: grey 2px 2px 2px 2px;
+    line-height: 1px;
 }
 
 .cardlink{
+    display: flex;
     width: 200px;
+
 }
 
 .hostelcard:hover{
@@ -256,7 +271,7 @@ p{
     width: 30%;
     height: 600px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-right: 20px;
     background-color: #f2f2f2;
     border-radius: 15px 15px 15px 15px;
 }
