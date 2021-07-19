@@ -267,14 +267,43 @@ p{
 
 .popular{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 80px;
     width: 30%;
-    height: 600px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #f2f2f2;
     border-radius: 15px 15px 15px 15px;
 }
+.populartitle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.populartitle .fa-chart-line{
+    margin-left: 150px;
+}
+
+.cardpopular{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.imgpopular{
+    width: 150px;
+    height: 120px;
+    border: 1px black solid;
+}
+
+.cardtitle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
 
 
 
