@@ -1,62 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); /*import de la police raleway*/
 body{ /*selection police*/
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}    
 
-header img{/* largeur du logo*/
+header img{
     width: 150px;
 }
 
-.header-top nav{ /*largeur de la <nav>*/
-    width: 30%;
+.header-top { 
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding-top: 30px;
 }
 
-header{
+.navbar{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
 }
 
-.header-top{
+nav{
     display: flex;
-    justify-content: space-between;  
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    list-style: none;  
 }
 
 li{
-    list-style: none;
-}
-
-.propos, .hebergement, .assitance{
-    width: 30%
-}
-
-nav a{
-    font-weight: bold;
-    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
+    display: flex;
+    justify-content: flex-end;
     text-decoration: none;
     color: grey;
+    height: 100%;
 }
 
-nav a:hover{
-    color: #0065fc;
+
+ nav a:hover{
+    color: #0065FC;
     border-top: 2px #0065FC solid;
-}
-
-
-
-nav ul{
-    display: flex;
-    justify-content: space-around;
+    border-top: 15px;
 }
 
 .blue{
+    display: flex;
+    align-items: center;
     color: #0065FC;
-    padding-top: 20px;
+
+}
+
+.blue:hover{
+    border-top: solid #0065FC 2 px;
 }
 
 /* Début css de la partie section*/
@@ -149,8 +162,10 @@ input{
     padding: 0 20px 0 0;
     cursor: pointer;
 }
+
 .flt-2:hover{
     background-color: #0065FC;
+    color: white;
 }
 
 #logocercle{
@@ -205,8 +220,9 @@ h2, a ,h3{
 }
 
 .seemore{
-    color: black;
+    color: rgb(0, 0, 0);
 }
+
 .seemore:hover{
     color: #0065fc;
 }
@@ -214,22 +230,31 @@ h2, a ,h3{
 .containercard{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 15px 15px 15px 15px;
     width: 60%;
-
     padding-left: 20px;
     background-color: #f2f2f2;
 }
 
 h4{
     color: black;
-    margin-left: 10px;
+
 }
 
 p{
     color: black;
-    margin-left: 10px;
+
+}
+
+.hostelcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    height: 80%;
+    border: solid black;
+
 }
 
 .hostelcard{
@@ -237,15 +262,18 @@ p{
     flex-direction: column;
     border: white solid 2px;
     border-radius: 15px 15px 15px 15px;
-    width: 200px; 
+    width: 100%; 
     background-color: white;
     box-shadow: grey 2px 2px 2px 2px;
     line-height: 1px;
+    border: solid black;
 }
 
 .cardlink{
     display: flex;
-    width: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 27%;
 
 }
 
@@ -255,7 +283,7 @@ p{
 }
 
 .imghotel{
-    width: 200px;
+    width: 100%;
     height: 120px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -289,18 +317,26 @@ p{
     display: flex;
     align-items: flex-start;
     width: 100%;
+    border-color: 1px solid red;
 }
 
 .imgpopular{
-    width: 150px;
+    width: 120px;
     height: 120px;
+    border-radius: 15px 0px 0px 15px;
     border: 1px black solid;
 }
 
 .cardtitle{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
     width: 100%;
+
+}
+.containerpopular{
+    display: flex;
+    flex-direction: column;
 }
 
 

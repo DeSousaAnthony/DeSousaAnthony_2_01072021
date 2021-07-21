@@ -12,20 +12,24 @@
     <body>
     <!--Début du <header> a partir d'ici-->
         <header>
-            <div class="header-top">
-                <img src="images/logo/ReserviaV2.png" alt="logo reservia">
-                <nav>
-                    <ul>
-                        <li><a href="#containercard">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#" class="blue">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <div class="header-top"> 
+                <img class="logo" src="images/logo/ReserviaV2.png" alt="logo reservia">
+                <div class="navbar">   
+                    <nav>
+                        <ul>
+                            <li><a href="#">Hébergements</a></li>
+                            <li><a href="#">Activités</a></li>
+                        </ul>
+                    </nav>
+                    <nav>   
+                        <a href="#" class="blue">S'incrire</a>
+                    </nav>
+                </div>
+            </div>      
             <div class="header-bottom">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
-            </div>        
+            </div>     
         </header>
     <!--Fin du <header> -->
 
@@ -88,6 +92,7 @@
             <div class="resultcontainer">
                 <div class="containercard">
                     <h2>Hébergements a Marseille</h2>
+                    <div class="hostelcontainer">
                     <a class="cardlink" href="#">
                         <div class="hostelcard">
                             <img class="imghotel" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hotel cannebiere">
@@ -172,6 +177,7 @@
                             </div>        
                         </div>
                     </a>
+                    </div>
                     <a href="#" class="seemore"><h3>Afficher plus ...</h3></a>
                 </div>
     <!--Fin hebergement-->
@@ -184,7 +190,7 @@
                         </h2>        
                     </div>
                     <div class="containerpopular">
-                        <a class="cardlink" href="#">
+                        <a class="cardpopularlink" href="#">
                             <div class="cardpopular">
                                 <img class="imgpopular" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin">
                                 <div class="cardtitle">
@@ -200,6 +206,38 @@
                                 </div>
                             </div>
                         </a>
+                        <a class="cardpopularlink" href="#"> 
+                        <div class="cardpopular">
+                                <img class="imgpopular" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                                <div class="cardtitle">
+                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                    <p>Nuit à partir de <strong>71</strong></p>
+                                    <div class="star">
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="cardpopularlink" href="#"> 
+                        <div class="cardpopular">
+                                <img class="imgpopular" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel tout bleu et blanc">
+                                <div class="cardtitle">
+                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                                    <p>Nuit à partir de <strong>71</strong></p>
+                                    <div class="star">
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>
+                                        <i class="fas fa-star" style="color: #0065fc;"></i>                                            
+                                        <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>    
                     </div>   
                 </div>
     <!--fin populaire-->
