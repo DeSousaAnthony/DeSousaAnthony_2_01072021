@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); /*import de la police raleway*/
 
 body{
+  display: block;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +14,10 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6,{
-  font-weight: bold; /* définition de norme de la police pour les titre et balise*/
+  font-weight: bold; /* définition de norme de la police pour les titre*/
 }
 
-       /* haut de page logo et navbar */
+            /* haut de page logo et navbar */
 
 header{
   margin: 1% 2% 0 2%
@@ -48,7 +50,7 @@ header ul {
 
 header ul li a:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 25px;
+  padding-top: 20px;
   color: #0065fc;
 }
 
@@ -70,14 +72,14 @@ nav a {
 
 .inscrire a:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .inscrire {
   padding-left: 28px;
 }
 
-      /* Fonction recherche */
+            /* Fonction recherche */
 
 .search{
   font-size: bold;
@@ -137,7 +139,7 @@ input{
   cursor: pointer;
 }
 
-/* Les filtres */
+            /* Les filtres */
 
 .filterbar{
   display: flex;
@@ -157,9 +159,13 @@ input{
   height: 100%;
 }
 
+#flt-1 .filter{
+  margin-bottom: 10px;
+}
+
 .flt-2{
   display: flex;
-  margin-left: 20px;
+  margin-left: 2%;
   height: 40px;
   text-align: center;
   border-radius: 25px 25px 25px 025px;
@@ -181,14 +187,11 @@ input{
   color: white;
 }
 
-#logocercle{
-  color: #0065FC;
-}
-
-#logocercle{
+.logocercle{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #0065FC;
   width: 40px;
   height: 40px;
   margin-left: -2px;
@@ -196,7 +199,7 @@ input{
   background: #DEEBFF
 }
 
-/* Information */
+            /* Information */
 
 #lodging{
   display: flex;
@@ -214,12 +217,13 @@ input{
   margin: 10px 10px 0 0;
 }
 
-/* Hebergement */
+            /* Hebergement */
 
 
 .resultcontainer{
   display: flex;
   margin: 2%;
+  justify-content: space-between;
 }
 
 .hostelcontainer{
@@ -234,7 +238,6 @@ input{
   justify-content: space-between;
   border-radius: 15px;
   width: 60%;
-  margin: 0 25px 0 0;
   background-color: #f2f2f2;
 }
 
@@ -284,7 +287,7 @@ input{
 }
 
 .seemore{
-  width: 90%;
+  margin-right: 77%;
 }
 
 .seemore h3:hover{
@@ -293,7 +296,7 @@ input{
 
 
 
-/* article le splus populaires */ 
+            /* <article> les plus populaires */ 
 
 #popular{
   display: flex;
@@ -372,7 +375,7 @@ input{
   transform: scale(1.2);
 }
 
-/*css du footer*/
+            /*Footer*/
 
 footer h3{
   margin: 20px 20px 20px 40px;
@@ -404,4 +407,126 @@ footer{
   max-width: 100%;
   margin: 0%;
   background-color: #f2f2f2;
+}
+
+/* responsive pour tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body{
+    width: 100%;
+  }
+
+  .header-bottom{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .search {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .city{
+    width: 165px;
+  }
+
+  /* les filtres */
+
+  .filterbar {
+    justify-content: center;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  #lodging{
+    align-items: CENTER;
+    position: relative;
+    margin-left: 4px;
+  }
+
+  .flt-1{
+    justify-content: flex-end;
+  }
+
+  .flt-2{
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Hebergement */
+
+  .resultcontainer{
+    margin: 25px 0 50px;
+    display: FLEX;
+    flex-direction: column;
+  }
+
+  #containercard h2{
+    padding-bottom: 5px;
+  } 
+
+  #containercard{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 0;
+  }
+
+  /* populaire */
+
+  #popular{
+    width: 100%;
+    border-radius: 0;;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .populartitle{
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+
+  .containerpopular{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5%;
+  }
+
+  .cardpopularlink{
+    padding-bottom: 25px;
+  }
+
+}
+
+/* responsive mobile */
+
+@media (min-width: 300px) and (max-width: 767px) {
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 16;
+  }
+
+  header {
+    margin: 0;
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .headercontainer{
+    padding-top: 5px;
+  }
+
+  .navbar{
+    margin-right: 0;
+  }
 }
