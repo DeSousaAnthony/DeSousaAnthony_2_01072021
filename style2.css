@@ -364,11 +364,12 @@ input{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  
   align-content: space-between;
   justify-content: space-between;
-  height: 375px;
+  height: 454px;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   box-sizing: border-box;
 }
 
@@ -376,35 +377,47 @@ input{
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+
+}
+
+.activitycard:hover{
+  transform: scale(1.1);
+}
+
+.activitycard{
+  width: 23%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
   box-shadow: 0 6px 5px 7px rgb(0, 0, 0, 0.137);
   transition: all 1s ease;
 }
 
-#activity img:hover{
-  transform: scale(1.1);
-}
-
-.activityone, .activitydouble{
-  width: 23%;
-  
-}
-
-.actpiconefour{
+.actpicone{
   height: 400px;
 }
 
 .actpictwo{
-  height: 215px;
+  height: 195px;
 }
 
 .actpicthree{
   height: 120px;
 }
+
+.actpicfour{
+  height: 400px;
+}
+
 .actpicfive{
-  height: 150px;
+  height: 130px;
 }
 .actpicsix{
-  height: 185px;
+  height: 165px;
+}
+
+.activityname h4{
+  margin: 10px 0 10px 10px;
 }
 
             /*Footer*/
