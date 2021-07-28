@@ -176,9 +176,7 @@ input{
 }
 
 .flt-2 p{
-  margin-left: 5px;
-  margin-top: 0;
-
+  margin: 10px 5px 10px 5px;
 }
 
 .flt-2:hover{
@@ -364,7 +362,6 @@ input{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
   align-content: space-between;
   justify-content: space-between;
   height: 454px;
@@ -410,7 +407,7 @@ input{
 }
 
 .actpicfive{
-  height: 130px;
+  height: 145px;
 }
 .actpicsix{
   height: 165px;
@@ -457,12 +454,15 @@ footer{
 
 /* responsive pour tablette */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
 
   body{
     width: 100%;
   }
 
+  header{
+    margin: 1% 5% 0 5%;
+  }
   .header-bottom{
     text-align: center;
     margin-bottom: 15px;
@@ -472,7 +472,7 @@ footer{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     margin-top: 15px;
   }
 
@@ -480,16 +480,16 @@ footer{
     width: 165px;
   }
 
-  /* les filtres */
+  /* les filtres responsive */
 
   .filterbar {
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     font-size: 1em;
   }
 
   #lodging{
-    align-items: CENTER;
+    align-items: center;
     position: relative;
     margin-left: 4px;
   }
@@ -503,31 +503,28 @@ footer{
     margin: 0;
   }
 
-  /* Hebergement */
+  /* Hebergement responsive */
 
-  .resultcontainer{
-    margin: 25px 0 50px;
-    display: FLEX;
+  .lodging-popular{
+    display: flex;
     flex-direction: column;
+    margin: 0 5% 0 5%;
   }
 
-  #containercard h2{
-    padding-bottom: 5px;
-  } 
-
-  #containercard{
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 0;
+  #lodgingresult{
+    width: 95%;
   }
 
-  /* populaire */
+  .seemore{
+    width: 50%;
+  }
 
-  #popular{
-    width: 100%;
-    border-radius: 0;;
-    padding: 0;
-    margin-left: 0;
+  /* populaire responsive*/
+
+  #popularresult{
+    width: 95%;
+    margin-top: 3%;
+    
   }
 
   .populartitle{
