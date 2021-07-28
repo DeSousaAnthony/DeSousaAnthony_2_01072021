@@ -3,7 +3,6 @@
 body{
   display: block;
   font-family: 'Raleway', sans-serif;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -13,14 +12,14 @@ a{
   color: black;
 }
 
-h1, h2, h3, h4, h5, h6,{
+h1, h2, h3, h4, h5, h6{
   font-weight: bold; /* définition de norme de la police pour les titre*/
 }
 
             /* haut de page logo et navbar */
 
 header{
-  margin: 1% 2% 0 2%
+  margin: 1% 10% 0 10%
 }       
 
 .headercontainer {
@@ -201,7 +200,7 @@ input{
 
             /* Information */
 
-#lodging{
+#info{
   display: flex;
 }
 
@@ -217,172 +216,206 @@ input{
   margin: 10px 10px 0 0;
 }
 
-            /* Hebergement */
+            /* Section Hebergement et polulaire */
 
-
-.resultcontainer{
+.lodging-popular{
   display: flex;
-  margin: 2%;
-  justify-content: space-between;
+  margin: 30px 10% 30px 10%;
 }
 
-.hostelcontainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+            /*  article herbergement */
 
-#containercard{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-radius: 15px;
-  width: 60%;
+#lodgingresult{
   background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0 40px 0 0px;
+  padding: 20px;
 }
 
-#containercard h2{
-  margin-left: 4%;
+#lodgingmarseille{
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 .hostelcard{
-  display: flex;
-  flex-direction: column;
-  border: white solid 2px;
-  border-radius: 15px 15px 15px 15px;
-  width: 100%; 
-  background-color: white;
-  box-shadow: grey 2px 2px 2px 2px;
-  line-height: 1px;
-}
-
-.hostelcard h4, p{
-  margin:16px 0 10px 15px;
-
-}
-
-.star{
-  margin: 10px 0 15px 15px;
-}
-
-.cardlink:hover{
-  transform: scale(1.2);
-}
-
-.cardlink{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 27%;
-  margin: 20px;
+  width: 30%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 5px 7px rgb(0, 0, 0, 0.137);
+  margin: 0 5px 40px 5px;
+  padding: 5px;
   transition: all 1s ease;
+}
+
+.hostelcard:hover{
+  transform: scale(1.1);
 }
 
 .imghotel{
   width: 100%;
-  height: 120px;
-  border-radius: 15px 15px 0px 0px;
+  height: 100px;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
 
-.seemore{
-  margin-right: 77%;
+.hostelcard p{
+  margin: 5px 10px;
+}
+
+.hostelcard h4{
+  margin: 0 10px;
+}
+
+.hostelcard h4:hover{
+  color: #0065fc;
+}
+
+.hostelcard .star{
+  margin: 5px 10px;
+}
+
+ p, .star{
+  cursor: default;
 }
 
 .seemore h3:hover{
   color: #0065FC;
 }
 
+            /* article populaire */ 
 
+#popularresult{
+  width: 35%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
 
-            /* <article> les plus populaires */ 
+.titlepopularsection{
+  display: flex;
+  justify-content: space-between;
+}
 
 #popular{
-  display: flex;
-  flex-direction: column;
-  margin-left: 80px;
-  width: 30%;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #f2f2f2;
-  border-radius: 15px 15px 15px 15px;
-}
-
-.populartitle{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-}
-
-.cardpopular{
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  background: white;
-  border-radius: 15px;
-  padding: 3px;
-  height: 140px;
-  box-shadow: grey 2px 2px 2px 2px;
-  transition: all 1s ease;
-}
-
-.imgpopular{
-  background-color: white;
-  width: 30%;
-  height: 100%;
-  border-radius: 15px 0px 0px 15px;   
-  object-fit: cover;
-}
-
-.cardlinkpopular{
-  margin: 20px;
-}
-
-.cardtitle{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 0px 5px 0px 15px;
-  width: 70%;
-}
-
-.cardtitle h4, p{
-  margin: 10px 5px 0px 15px
-}
-
-.cardtitle .star{
-  margin-left: 15px;
+  position: relative;
 }
 
 .containerpopular{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cardpopular{
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  box-shadow: 0 6px 5px 7px rgb(0, 0, 0, 0.137);
+  transition: all 1s ease;
 }
 
 .cardpopular:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.imgpopular{
+  width: 45%;
+  height: 140px;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+  margin: 0 15px 0 0;
+  float: left;
+}
+
+.cardpopular h4{
+  margin: 0 10px;
+}
+
+.cardpopular h4:hover{
+  color: #0065FC;
+}
+
+.cardpopular p{
+  margin: 12px 10px
+}
+
+.cardpopular p .star{
+  cursor: default;
+}
+
+.cardpopular .star{
+  margin-top: 45px;
+}
+
+            /* Partie Activités */
+  
+#activity{
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 10% 30px 10%;
+}
+
+#activitycontainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 375px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+#activity img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 6px 5px 7px rgb(0, 0, 0, 0.137);
+  transition: all 1s ease;
+}
+
+#activity img:hover{
+  transform: scale(1.1);
+}
+
+.activityone, .activitydouble{
+  width: 23%;
+  
+}
+
+.actpiconefour{
+  height: 400px;
+}
+
+.actpictwo{
+  height: 215px;
+}
+
+.actpicthree{
+  height: 120px;
+}
+.actpicfive{
+  height: 150px;
+}
+.actpicsix{
+  height: 185px;
 }
 
             /*Footer*/
 
 footer h3{
-  margin: 20px 20px 20px 40px;
+  margin: 20px 20px 20px 20px;
 }
 
 footer ul{
   list-style: none;
+  padding-left: 20px;
 }
 
 footer a{
@@ -391,21 +424,21 @@ footer a{
 }
 
 footer a:hover{
-  color: #0065FC;
-  border-bottom: solid 1px #0065FC;
+  color: grey;
+  border-bottom: solid 1px grey;
 }
 
 .footer{
   width: 70%;
   justify-content: space-between;
   display: flex;
-  align-content: flex-start;
+  align-content: flex-start
 }
 
 footer{
   display: flex;
   max-width: 100%;
-  margin: 0%;
+  margin: 0 10% 0 10%;
   background-color: #f2f2f2;
 }
 
@@ -505,28 +538,6 @@ footer{
 
 /* responsive mobile */
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px){
 
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  h4 {
-    font-size: 16;
-  }
-
-  header {
-    margin: 0;
-    width: 100%;
-    padding-left: 5px;
-  }
-
-  .headercontainer{
-    padding-top: 5px;
-  }
-
-  .navbar{
-    margin-right: 0;
-  }
 }
