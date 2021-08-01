@@ -72,11 +72,6 @@ header ul li {
   margin-right: 0%;
 }
 
-.inscrire a:hover {
-  border-top: 2px solid #0065fc;
-  padding-top: 20px;
-}
-
 .inscrire {
   padding-left: 28px;
 }
@@ -183,6 +178,7 @@ input{
 
 .flt-2 p{
   margin: 10px 5px 10px 5px;
+  cursor: pointer;
 }
 
 .flt-2:hover{
@@ -317,6 +313,7 @@ input{
 
 .cardpopular{
   width: 100%;
+  height: 160px;
   background: white;
   border-radius: 15px;
   padding: 5px;
@@ -332,32 +329,38 @@ input{
 
 .imgpopular{
   width: 45%;
-  height: 140px;
+  height: 150px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
   margin: 0 15px 0 0;
   float: left;
 }
 
-.cardpopular h4{
-  margin: 0 10px;
-}
-
 .cardpopular h4:hover{
   color: #0065FC;
 }
 
-.cardpopular p{
-  margin: 12px 10px
+.price{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.price h4{
+  margin: 0;
+}
+
+.price p{
+  margin-bottom: 20%;
+}
+
+
 
 .cardpopular p .star{
   cursor: default;
 }
 
-.cardpopular .star{
-  margin-top: 45px;
-}
 
             /* Partie Activités */
   
@@ -457,7 +460,7 @@ footer a:hover{
 
 footer{
   display: flex;
-  max-width: 100%;
+  width: 100%;
   margin: 0 10% 0 10%;
   background-color: #f2f2f2;
 }
@@ -582,15 +585,12 @@ footer{
   }
 
   .imgpopular{
-    height: 210px;
+    height: 150px;
+    width: 50%;
   }
 
   .cardpopular h4{
     margin-top: 3%;
-  }
-
-  .cardpopular .star{
-    margin-top: 15%;
   }
 
             /* activité responsive */
@@ -738,6 +738,10 @@ footer{
     margin: 5%;
     width: 90%;
   }
+
+  .popular-text-price p{
+    margin-top: 0;
+  }
   
           /* Fin section populaire responsive mobil */ 
 
@@ -756,6 +760,7 @@ footer{
   #lodgingresult{
     background-color: white;
     width: 90%;
+    margin: 0;
   }
 
   .seemore h3{
