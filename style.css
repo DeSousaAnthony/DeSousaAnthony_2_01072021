@@ -53,7 +53,7 @@ header ul {
 
 .navbar ul li a:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 30px;
+  padding-top: 25px;
   color: #0065fc;
 }
 
@@ -64,7 +64,6 @@ header ul li {
 .navbar a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
 }
 
 .inscrire a {
@@ -74,6 +73,7 @@ header ul li {
 
 .inscrire {
   padding-left: 28px;
+  font-weight: bold;
 }
 
 .hiddennavbar {
@@ -131,6 +131,7 @@ input {
   background-color: #0065FC;
   color: white;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .btnsearch:hover {
@@ -174,7 +175,7 @@ input {
 }
 
 .flt-2 p {
-  font-size: 0.7em;
+  font-size: 1em;
   margin: 10px 5px 10px 5px;
   cursor: pointer;
 }
@@ -368,7 +369,6 @@ input {
             /* Partie Activités */
   
 #activity {
-  background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px;
   margin: 0 10% 30px 10%;
@@ -458,12 +458,14 @@ footer a:hover {
   justify-content: space-between;
   display: flex;
   align-content: flex-start
+
 }
 
 footer {
   display: flex;
   margin: 0 10% 0 10%;
   background-color: #f2f2f2;
+  line-height: 30px;
 }
 
           /* RESPONSIVE TABLETTE */
@@ -622,6 +624,11 @@ footer {
 
   footer {
     margin: 3% 0 0 0;
+    width: 80%;
+  }
+
+  .footer {
+    width: 95%;
   }
 }         
 
@@ -712,6 +719,10 @@ footer {
   
   .flt-2 {
     margin: 0 0 2% 0;
+  }
+
+  .flt-2 p{
+    font-size: 0.7em;
   }
 
   #info {
