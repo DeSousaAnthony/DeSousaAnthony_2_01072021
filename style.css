@@ -624,11 +624,12 @@ footer {
 
   footer {
     margin: 3% 0 0 0;
-    width: 80%;
+    width: 100%;
   }
 
   .footer {
-    width: 95%;
+    width: 85%;
+    margin-left: 5%;
   }
 }         
 
